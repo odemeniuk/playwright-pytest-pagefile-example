@@ -8,4 +8,4 @@ def pytest_runtest_makereport(item, call) -> None:
             page = item.funcargs["page"]
             screenshot_dir = Path(".playwright-screenshots")
             screenshot_dir.mkdir(exist_ok=True)
-            page.screenshot(path=str(screenshot_dir / f"screenshot.png"))
+            page.screenshot(path=str(screenshot_dir / f"screenshots.png"))
